@@ -33,7 +33,8 @@
         "2amigos/yii2-chartjs-widget": "~2.0",
         "yiisoft/yii2-apidoc": "~2.1.0",
         "kartik-v/yii2-widget-select2": "@dev",
-        "yiisoft/yii2-redis": "~2.0.0"
+        "yiisoft/yii2-redis": "~2.0.0",
+        "ext-gd": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
