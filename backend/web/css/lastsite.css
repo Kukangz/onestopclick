@@ -1,0 +1,1091 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/*------------------global-----------------*/
+
+a{
+    text-decoration:none !important;
+}
+input{
+    -webkit-appearance: none;
+    box-shadow:none;
+}
+ol, ul {
+    margin-bottom:0;
+}
+body{
+    position:relative;
+    padding:0;
+    -webkit-text-size-adjust: 100%;
+}
+/*--------dashboard--------------*/
+.sidebar-mini .sidebar {
+    font-weight:normal;
+}
+.sidebar .sidebar-wrapper {
+    padding-bottom:0;
+    height: calc(100vh - 150px);
+}
+.sidebar .sidebar-wrapper > .nav{
+    padding-bottom:30px;
+}
+.sidebar .user{
+    margin-top:0;
+    padding-top:23px;
+}
+.sidebar .user .photo{
+    border:2px solid #fff;
+    height:44px;
+}
+.sidebar .user .photo,
+.sidebar .logo a.logo-mini{
+    margin-left:20px;
+}
+.sidebar .user .info .caret {
+    right:25px;
+}
+.sidebar .user .photo,
+.sidebar .logo a.logo-mini {
+	width:44px;
+	margin-right:10px;
+}
+
+.sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini, 
+.sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini,
+.sidebar .nav i {
+	width:18px;
+	margin-right:10px;
+}
+
+.sidebar .user .info > a{
+    padding: 11px 0;
+}
+.sidebar .user .info > a > span{
+    padding-right:35px;
+}
+.sidebar .user .info > a > span small{
+    display:block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size:16px;
+    font-weight:700;
+}
+.sidebar .nav li > a{
+    padding-left:5px;
+    padding-right:5px;
+}
+.sidebar .nav .caret {
+    right:5px;
+}
+.sidebar .logo:after{
+    bottom:auto;
+    top:0;
+}
+.sidebar .logo .logo-normal small{
+    display:block;
+    font-size:11px;
+    line-height:normal;
+    text-transform:none
+}
+.main-panel{
+    height:100%;
+}
+.main-panel .navbar{
+    padding:20px 0;
+}
+.main-panel .content{
+    margin-top: 0;
+    padding-top: 0;
+}
+.main-panel .card,
+.main-panel .btn.btn-just-icon{
+    background-color:#f6f6f6;
+}
+.main-panel .card-profile, 
+.main-panel .card-testimonial {
+    margin-top:25px;
+}
+.main-panel .card,
+.main-panel .card [data-background-color]{
+    box-shadow:none;
+}
+.main-panel .card-transparent{
+    border-radius:none;
+    color:#888;
+    background-color:transparent;
+}
+.main-panel .btn.btn-just-icon i{
+    color:#999;
+    line-height:normal;
+    top:0;
+}
+.main-panel .card-header.card-header-icon{
+    float:none;
+    padding:0;
+    border-radius:0;
+}
+.main-panel .card-header.card-header-icon .card-icon,
+.main-panel .card-header.card-header-icon .card-title{
+    display:table-cell;
+    vertical-align:middle;
+}
+.main-panel .card-header.card-header-icon .card-icon{
+    border-radius: 3px;
+    height:64px;
+    color:#fff;
+}
+.main-panel .card-transparent .card-content {
+    padding:15px 0;
+}
+.main-panel .card-header.card-header-icon .card-title{
+    padding-left:15px;
+    font-size:22px;
+    font-weight:bold;
+}
+.main-panel .card-header.card-header-icon .card-title > small{
+    display: block;
+    font-size: 13px;
+    line-height: normal;
+    font-weight:normal;
+}
+.main-panel .card-header.card-header-text{
+    padding:0;
+}
+.main-panel .card-header.card-header-text .card-title{
+    padding:12px 15px;
+    border-radius:3px;
+    margin-bottom: 0;
+    color:#fff;
+}
+.main-panel .table .td-actions .btn-round {
+    padding:8px;
+}
+.main-panel .table .btn .material-icons {
+    font-size:20px;
+}
+.main-panel .table > thead > tr > th {
+    font-size:11px;
+    font-weight:500;
+    text-transform:uppercase;
+}  
+.main-panel .card-header.card-header-icon .card-icon,
+.td-number:first-child{
+    width:64px;
+    text-align:center;
+}
+.togglebutton label input[type="checkbox"]{
+    position:absolute;
+}
+.togglebutton label .toggle{
+    margin-left:0;
+    margin-right:0;
+    width: 45px;
+    height: 25px;
+    background-color:#ddd;
+}
+.togglebutton label .toggle::after {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    top:0;
+    left:0;
+    box-shadow:none;
+    border-color:#ddd;
+}
+.togglebutton label input[type="checkbox"]:checked + .toggle::after{
+    left:20px;
+    border-color:#ce3131;
+}
+.td-qty{
+    text-align:center;
+    width:200px;
+}
+.btn-qty{
+    border-radius:3px;
+    border: 1px solid;
+    margin-left:10px;
+}
+.btn-qty > button{
+    background: none;
+    border:0;
+    height: 25px;
+    width: 40px;
+    float: left;
+    padding:0;
+}
+.btn-qty > button:first-child{
+    border-right:1px solid;
+}
+.btn-qty > button > i{
+    font-size:14px;
+}
+.table-shopping > tbody > tr > td {
+    font-size:14px;
+}
+.table-shopping .img-container {
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius:5px;
+    width: 100px;
+}
+.table-shopping .td-name > h4{
+    margin:0;
+    font-size:15px;
+    font-weight:bold;
+}
+.table-shopping .td-name > h4 > small{
+    display:block;
+    font-size:13px;
+    line-height:normal;
+}
+#datatables_wrapper .row:nth-child(2){
+    margin-bottom:20px;
+}
+.pagination-single{
+    margin-left:auto;
+    margin-right:auto;
+    display:table;
+}
+.table-sales {
+    margin-top:15px;
+}
+.card-login .btn{
+    font-size:14px;
+}
+.form-control-static {
+    color:#000;
+}
+/*--------login-page---------*/
+.full-page:before{
+    background:transparent;
+}
+.login-page *{
+    font-family:'Lato', sans-serif;
+    font-weight:normal;
+}
+.login-page > .content{
+    padding-top:0px;
+    min-height:100vh;
+}
+.login-page > .content .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.login-page .card-login{
+    margin: 0 auto;
+    display: table;
+    max-width: 320px;
+    padding-bottom: 0;
+    table-layout:fixed;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+.card-login .card-info{
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    height:100px;
+}
+.card-login .card-info img{
+    position:absolute;
+    top:-12px;
+    left:-12px;
+    width:150px;
+}
+.card-login .card-content{
+    padding:30px;
+}
+.card-login .card-title {
+    margin-top:0;
+    font-size: 18px;
+    margin-bottom:20px;
+}
+.card-login .checkbox {
+    margin-top:10px;
+}
+.card-login .checkbox label {
+    margin-left:0;
+}
+.card-login .checkbox .checkbox-material {
+    padding-right:5px;
+}
+
+.checkbox label, .radio label, label, .label-on-left, .label-on-right{
+    color:#9d9d9d;
+}
+
+.form-group .form-control,.form-control{
+    color: #000;
+}
+
+.form-product-devider{
+    border-top: 1px dashed #ff7e00;
+    margin: 22px 0;
+}
+
+.card-login .btn{
+    width: 100%;
+    margin-top:20px;
+}
+/*base color: red*/
+.main-panel,
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check{
+    background-color:#fff;
+}
+.card-login .card-title,
+.checkbox.has-error label,
+.form-group.has-error label.control-label,
+.main-panel .card-header.card-header-icon .card-title,
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check::before,
+.btn-qty > button{
+    color:#ce3131;
+}
+.card-login .card-info,
+.card-login .btn,
+.main-panel .btn.btn-primary,
+.main-panel .btn.btn-primary:active,
+.main-panel .btn.btn-primary:focus,
+.main-panel .card-header.card-header-icon .card-icon,
+.sidebar .nav li.active > a,
+.togglebutton label input[type="checkbox"]:checked + .toggle,
+.pagination > .active > a, 
+.pagination > .active > a:focus, 
+.pagination > .active > a:hover, 
+.pagination > .active > span, 
+.pagination > .active > span:focus, 
+.pagination > .active > span:hover,
+.main-panel .card [data-background-color="red"],
+.radio input[type="radio"]:checked ~ .check,
+.main-panel .card-header.card-header-text .card-title,
+.dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-menu li a:active,
+.wizard-card .moving-tab,
+.wizard-card .btn-group.open > .dropdown-toggle.btn,
+.wizard-card .btn-group-vertical.open > .dropdown-toggle.btn,
+.navbar .notification{
+    background:#ce3131;
+}
+.form-group .form-control,
+.form-group.is-focused .form-control,
+.form-group.has-error .form-control,
+.form-group.has-error.is-focused .form-control,
+[base-color="yellow"] .form-group.has-error .form-control,
+[base-color="yellow"] .form-group.has-error.is-focused .form-control,
+[base-color="green"] .form-group.has-error .form-control,
+[base-color="green"] .form-group.has-error.is-focused .form-control{
+    background-image: linear-gradient(#ce3131, #ce3131), linear-gradient(#9d9d9d, #9d9d9d);
+}
+.btn-group.bootstrap-select.show-tick.open .select-with-transition{
+    background-image: linear-gradient(#ce3131, #ce3131), linear-gradient(#9d9d9d, #9d9d9d) !important;
+}
+.btn-qty,
+.btn-qty > button:first-child,
+.togglebutton label input[type="checkbox"]:checked + .toggle::after,
+.pagination > .active > a, 
+.pagination > .active > a:focus, 
+.pagination > .active > a:hover, 
+.pagination > .active > span, 
+.pagination > .active > span:focus, 
+.pagination > .active > span:hover,
+.radio input[type="radio"]:checked ~ .circle,
+.wizard-card .choice:hover .icon, 
+.wizard-card .choice.active .icon,
+.wizard-card .picture:hover{
+    border-color:#ce3131;
+}
+.checkbox .checkbox-material .check,
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check{
+    border-color:#ddd;
+}
+.sidebar .nav li:hover > a, 
+.sidebar .nav li.active > [data-toggle="collapse"],
+.sidebar .nav li > a[aria-expanded="true"]{
+    background-color:rgba(206,49,49,0.5);
+}
+/*base color: yellow*/
+[base-color="yellow"] .login-page .card-login .card-info img{
+    width:140px;
+}
+[base-color="yellow"] .card-login .card-title,
+[base-color="yellow"] .main-panel .card-header.card-header-icon .card-title,
+[base-color="yellow"] .checkbox input[type="checkbox"]:checked + .checkbox-material .check::before,
+[base-color="yellow"] .btn-qty > button{
+    color:#e68c35;
+}
+[base-color="yellow"] .card-login .card-info,
+[base-color="yellow"] .card-login .btn,
+[base-color="yellow"] .main-panel .btn.btn-primary,
+[base-color="yellow"] .main-panel .btn.btn-primary:active,
+[base-color="yellow"] .main-panel .btn.btn-primary:focus,
+[base-color="yellow"] .main-panel .card-header.card-header-icon .card-icon,
+[base-color="yellow"] .sidebar .nav li.active > a,
+[base-color="yellow"] .togglebutton label input[type="checkbox"]:checked + .toggle,
+[base-color="yellow"] .pagination > .active > a, 
+[base-color="yellow"] .pagination > .active > a:focus, 
+[base-color="yellow"] .pagination > .active > a:hover, 
+[base-color="yellow"] .pagination > .active > span, 
+[base-color="yellow"] .pagination > .active > span:focus, 
+[base-color="yellow"] .pagination > .active > span:hover,
+[base-color="yellow"] .main-panel .card [data-background-color="red"],
+[base-color="yellow"] .radio input[type="radio"]:checked ~ .check,
+[base-color="yellow"] .main-panel .card-header.card-header-text .card-title,
+[base-color="yellow"] .dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-menu li a:active,
+[base-color="yellow"] .wizard-card .moving-tab,
+[base-color="yellow"] .wizard-card .btn-group.open > .dropdown-toggle.btn,
+[base-color="yellow"] .wizard-card .btn-group-vertical.open > .dropdown-toggle.btn,
+[base-color="yellow"] .navbar .notification{
+    background:#e68c35;
+}
+[base-color="yellow"] .form-group .form-control,
+[base-color="yellow"] .form-group.is-focused .form-control{
+    background-image: linear-gradient(#e68c35, #e68c35), linear-gradient(#9d9d9d, #9d9d9d);
+}
+[base-color="yellow"] .btn-group.bootstrap-select.show-tick.open .select-with-transition{
+    background-image: linear-gradient(#e68c35, #e68c35), linear-gradient(#9d9d9d, #9d9d9d) !important;
+}
+[base-color="yellow"] .btn-qty,
+[base-color="yellow"] .btn-qty > button:first-child,
+[base-color="yellow"] .togglebutton label input[type="checkbox"]:checked + .toggle::after,
+[base-color="yellow"] .pagination > .active > a, 
+[base-color="yellow"] .pagination > .active > a:focus, 
+[base-color="yellow"] .pagination > .active > a:hover, 
+[base-color="yellow"] .pagination > .active > span, 
+[base-color="yellow"] .pagination > .active > span:focus, 
+[base-color="yellow"] .pagination > .active > span:hover,
+[base-color="yellow"] .radio input[type="radio"]:checked ~ .circle,
+[base-color="yellow"] .wizard-card .choice:hover .icon, 
+[base-color="yellow"] .wizard-card .choice.active .icon,
+[base-color="yellow"] .wizard-card .picture:hover{
+    border-color:#e68c35;
+}
+[base-color="yellow"] .sidebar .nav li:hover > a, 
+[base-color="yellow"] .sidebar .nav li.active > [data-toggle="collapse"],
+[base-color="yellow"] .sidebar .nav li > a[aria-expanded="true"]{
+    background-color:rgba(230,140,53,0.5);
+}
+
+/*base color: green-*/
+[base-color="green"] .login-page .card-login .card-info img{
+    width:122px;
+}
+[base-color="green"] .card-login .card-title,
+[base-color="green"] .main-panel .card-header.card-header-icon .card-title,
+[base-color="green"] .checkbox input[type="checkbox"]:checked + .checkbox-material .check::before,
+[base-color="green"] .btn-qty > button{
+    color:#11a049;
+}
+[base-color="green"] .card-login .card-info,
+[base-color="green"] .card-login .btn,
+[base-color="green"] .main-panel .btn.btn-primary,
+[base-color="green"] .main-panel .btn.btn-primary:focus,
+[base-color="green"] .main-panel .btn.btn-primary:active,
+[base-color="green"] .main-panel .card-header.card-header-icon .card-icon,
+[base-color="green"] .sidebar .nav li.active > a,
+[base-color="green"] .togglebutton label input[type="checkbox"]:checked + .toggle,
+[base-color="green"] .pagination > .active > a, 
+[base-color="green"] .pagination > .active > a:focus, 
+[base-color="green"] .pagination > .active > a:hover, 
+[base-color="green"] .pagination > .active > span, 
+[base-color="green"] .pagination > .active > span:focus, 
+[base-color="green"] .pagination > .active > span:hover,
+[base-color="green"] .main-panel .card [data-background-color="red"],
+[base-color="green"] .radio input[type="radio"]:checked ~ .check,
+[base-color="green"] .main-panel .card-header.card-header-text .card-title,
+[base-color="green"] .dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-menu li a:active,
+[base-color="green"] .wizard-card .moving-tab,
+[base-color="green"] .wizard-card .btn-group.open > .dropdown-toggle.btn,
+[base-color="green"] .wizard-card .btn-group-vertical.open > .dropdown-toggle.btn,
+[base-color="green"] .navbar .notification{
+    background:#11a049;
+}
+[base-color="green"] .form-group .form-control,
+[base-color="green"] .form-group.is-focused .form-control{
+    background-image: linear-gradient(#11a049, #11a049), linear-gradient(#9d9d9d, #9d9d9d);
+}
+[base-color="green"] .btn-group.bootstrap-select.show-tick.open .select-with-transition{
+    background-image: linear-gradient(#11a049, #11a049), linear-gradient(#9d9d9d, #9d9d9d) !important;
+}
+[base-color="green"] .btn-qty,
+[base-color="green"] .btn-qty > button:first-child,
+[base-color="green"] .togglebutton label input[type="checkbox"]:checked + .toggle::after,
+[base-color="green"] .pagination > .active > a, 
+[base-color="green"] .pagination > .active > a:focus, 
+[base-color="green"] .pagination > .active > a:hover, 
+[base-color="green"] .pagination > .active > span, 
+[base-color="green"] .pagination > .active > span:focus, 
+[base-color="green"] .pagination > .active > span:hover,
+[base-color="green"] .radio input[type="radio"]:checked ~ .circle,
+[base-color="green"] .wizard-card .choice:hover .icon, 
+[base-color="green"] .wizard-card .choice.active .icon,
+[base-color="green"] .wizard-card .picture:hover{
+    border-color:#11a049;
+}
+[base-color="green"] .sidebar .nav li:hover > a, 
+[base-color="green"] .sidebar .nav li.active > [data-toggle="collapse"],
+[base-color="green"] .sidebar .nav li > a[aria-expanded="true"]{
+    background-color:rgba(17,160,73,0.5);
+}
+
+@media(max-width:767px){
+    .paginate_button.first,
+    .paginate_button.previous,
+    .paginate_button.next,
+    .paginate_button.last{
+        display:none;
+    }
+}
+@media (min-width:767px){
+    .login-page .card-login{
+        max-width:600px;
+    }
+    .card-login .card-info,
+    .card-login .card-content {
+        display:table-cell;
+        vertical-align:middle;
+    }
+    .card-login .card-info{
+        width:250px;
+        height:350px;
+        border-top-right-radius:0px;
+        border-bottom-left-radius:6px;
+    }
+    .card-login .card-info img{
+        top: -10px;
+        left: -60px;
+        width: 360px;
+    }
+    .card-login .card-content{
+        padding:30px 60px;
+    }
+    [base-color="yellow"] .login-page .card-login .card-info img{
+        top: 15px;
+        left: -40px;
+        width: 320px;
+    }
+    [base-color="green"] .login-page .card-login .card-info img{
+        top: 12px;
+        left: -17px;
+        width: 280px;
+    }
+}
+@media (min-width:992px){
+    .sidebar-mini .sidebar, .sidebar-mini .sidebar .sidebar-wrapper {
+        width:84px;
+    }
+    .pagination > li > a, .pagination > li > span {
+        font-size:14px;
+    }
+    .login-page .card-login{
+        max-width:800px;
+    }
+    .card-login .card-content{
+        padding:30px 100px;
+    }
+    .card-login .card-info{
+        width:280px;
+        height:400px;
+    }
+    .card-login .card-info img{
+        top: -30px;
+        left: -110px;
+        width: 440px;
+    }
+    [base-color="yellow"] .login-page .card-login .card-info img{
+        top:10px;
+        left:-60px;
+        width: 380px;
+    }
+    [base-color="green"] .login-page .card-login .card-info img{
+        top: 14px;
+        left: -21px;
+        width: 320px;
+    }
+}
+/*--------end login-page---------*/
+
+.form-group.is-empty .control-label {
+    left: 0;
+}
+.sidebar .logo .simple-text{
+    white-space: normal;
+}
+
+
+/*----- custom -----*/
+.navbar.navbar-transparent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card {
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+/*
+.card .table tr td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size:12px;
+}*/
+
+
+.main-panel .card-header.card-header-icon .card-title {
+    font-weight: 300;
+}
+
+.card form .col-md-offset-1:first-child{
+    padding-left: 0;
+}
+
+.alert-dismissable .close, .alert-dismissible .close{
+    right: 0;
+}
+
+.feature_group_name{
+    font-size:14px;
+    font-weight:bold;
+}
+.feature_box{
+    margin:5px 0 5px 20px;
+}
+.feature_item{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.feature_item span, .feature_item label{
+    display: inline-block;
+}
+.feature_item span{
+    width:120px;
+    font-weight: normal;
+}
+.feature_item label{
+    width:90px;
+}
+
+.form-group.is-empty .control-label {
+    left: 0;
+}
+
+.sidebar .logo .simple-text{
+    white-space: normal;
+}
+
+.card-book{
+    max-width: 130px;
+    margin: -50px auto 0;
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-book-preview{
+    max-width: 130px;
+    margin: auto 0;
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.divider{
+    height: 1px;
+    width:100%;
+    display:block; /* for use on default inline elements like span */
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.table-responsive {
+    overflow: visible;
+}
+
+
+table.subtable{
+    margin-bottom: 50px !important;
+}
+table.subtable > thead > tr{
+    background: #fcf8e3;
+}
+table.subtable > thead th{
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+table.subtable th, table.subtable td{
+    padding: 0px 8px !important;
+    font-size: 12px !important;
+}
+
+.select2-container{
+    margin-top: 20px !important;
+    width:100% !important;
+}
+
+
+
+.form-horizontal .checkbox-radios .checkbox:first-child, .form-horizontal .checkbox-radios .radio:first-child{
+    margin-top: 0;
+}
+
+.table-info, .table-info>td, .table-info>th{
+    background-color: hsla(200, 65.2%, 91%, 0.4);
+}
+
+.checkbox-inline, .radio-inline{
+    margin-top:0px;
+}
+
+.radio-inline label, .checkbox-inline label, .togglebutton label{
+    color: #000000 !important;
+}
+
+.less-padding{
+    margin: 0 !important;
+    padding: 8px !important;
+}
+
+.bookactive{
+    left: 0 !important; 
+}  
+
+
+.delete-penulis{
+    margin-top: -45px;
+    padding: 8px;
+}
+
+
+.add-product .row {
+    margin-top: 18px;
+}
+
+.thebook  .dropdown-toggle{
+    z-index: 0;
+}
+
+.thebook .bootstrap-select.btn-group .dropdown-menu {
+    top: 0; 
+}
+
+#so-offer-form{
+
+}
+#so-offer-form > .card-header.card-header-text{
+    position:relative;
+    display: block;
+}
+#show-book-btn{
+    position:absolute;
+    top:-9px;
+    right:0;
+    display:none;
+    z-index:9;
+    transition: all .35s ease-in-out;
+}
+#so-offer-form > .card-content{
+    padding-top:0;
+    padding-bottom: 0;  
+}
+
+#tbl-result{
+    margin-top: 5px;
+}
+#tbl-result > tr{
+    border-bottom: 1px solid #eee;      
+}
+#tbl-result .result-item{
+    cursor: pointer;
+    display: block;
+    color: #111;
+    padding-left: 6px;
+}    
+#tbl-result tr:hover, .result-item:hover, tr.selected{
+    background: #eee;
+}
+
+.tbl-result-pagination{
+    text-align: center;
+    padding-top: 5px;
+}
+
+#next-result, #prev-result{
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+    background: #999999;
+    padding: 0px 20px;
+    color: #fff;
+}
+
+.ppn-exclude, .ppn-include{
+    font-size: 10px;
+    display: block;
+    line-height: 0.7em;
+}
+.ppn-exclude{
+    color: #f44336;
+}
+span.ppn-exclude, span.ppn-include{
+    font-size: 12px;
+}
+
+.detail-penawaran .row{
+    padding-bottom: 10px;
+}
+.so-product-table{
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.so-product-table td .btn{
+    margin-top:0;
+    margin-bottom:5px;
+    display: block;
+    padding: 3px 11px;
+}
+.so-product-table td .btn.btn-xs > .fa{
+    font-size: 14px;
+}
+.so-product-table > thead > tr > th{
+    font-size: 11px;
+}
+.so-product-table tr > td, .so-product-table tr > th{
+    padding-top: 4px !important;
+    padding-bottom: 2px !important;
+    font-size:12px;
+}
+.so-product-table tr h4, .so-product-table tr h5{
+    margin:0;
+}
+.so-product-table td.price-net > h4, .so-product-table td.price-net > h5{
+    line-height: 1em;
+}
+.so-product-table td.price-net > h4 > strong, .so-product-table td.price-net > h5 > strong{
+    display: block;
+}
+.stats{
+    display: inline-block;
+    padding: 2px 10px 8px 4px;
+    color: #000;
+    border-left: 1px dashed #a5a5a5;
+}
+
+.stats small{
+    color: #a5a5a5;
+}
+.card-faktur{
+    width: 60px;
+    height: 90px;
+    overflow: hidden;
+    float: left;
+    z-index: 5;
+    margin-right: 11px;
+    /*border-radius: 50%;*/
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);        
+}
+.card-faktur img{
+    width: 168px;
+    margin-left: -50%;
+}
+.modal-body img{
+    width: 100%;
+    margin-left: 0;
+}
+
+.modal-dialog{
+    width: 900px;
+}
+
+.form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label{
+    font-size: 11px;
+    top:-3px;
+}
+/*reduce spaces*/
+body{
+    font-size: 12px;
+}
+strong{    
+    font-weight: 500;
+    /*font-weight: 600;*/
+}
+small{
+    font-size: 88%;
+}
+.main-panel .card-transparent{
+    color: #3C4858;
+}
+.card{
+    margin: 0;
+}
+td a.btn{
+    margin: 5px 0;
+}
+table td h4{
+    line-height: 1em;
+}
+.sidebar .nav i{
+    font-size:17px;
+    line-height:20px;
+}
+.sidebar .nav li > a{
+    margin-bottom:0px;
+    margin-top:0px;
+    font-size: 14px;
+}
+
+
+.sidebar-wrapper > .nav > li > a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.sidebar-wrapper > .nav > li ul.nav{
+    margin-top: 0;
+}
+.sidebar-wrapper > .nav > li > a > .sidebar-normal {
+	line-height: 30px;
+}
+
+
+.navbar.navbar-transparent {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.main-panel .card-transparent .card-content{
+    padding-top: 0;
+}
+.card{
+    margin-top: 3px;
+}
+.navbar-brand {
+    font-size: 16px;
+    color: #333 !important;
+}
+.btn.btn-just-icon, .navbar .navbar-nav > li > a.btn.btn-just-icon{
+    padding: 5px 5px;
+    margin-top: -2px;
+}
+.main-panel > .content{
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 0px;
+}
+.navbar .navbar-minimize{
+    padding: 6px 0 0 0px;
+}
+.navbar .navbar-nav > li > a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar{
+    min-height: 0 !important;
+}
+.navbar .navbar-brand{
+    height: auto !important;
+    padding: 5px 15px;
+}
+.btn:not(.btn-just-icon):not(.btn-fab) .fa, .navbar .navbar-nav > li > a.btn:not(.btn-just-icon):not(.btn-fab) .fa{
+    font-size: 14px !important;
+    font-weight: 200 !important;
+}
+.btn.btn-xs, .btn-group-xs .btn, .navbar .navbar-nav > li > a.btn.btn-xs, .btn-group-xs .navbar .navbar-nav > li > a.btn {
+    padding: 2px 12px 4px;
+}
+table.table tr{
+    height: auto;
+}
+table.table tr > th, table.table tr > td{
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+table.table .btn{
+    margin-top:0;
+    margin-bottom: 0;
+}
+table .nav-pills, table .tab-content{
+    margin-top: 0 !important;
+}
+.card [data-background-color]{
+    margin-top: 0;
+}
+.card-header .card-header-text{
+    margin-top: 5px;
+}
+.form-group .form-control::-moz-placeholder{
+   font-size:12px !important;
+}
+.form-group .form-control:-moz-placeholder{
+   font-size:12px !important;
+}
+.form-group .form-control::-webkit-input-placeholder{
+    font-size:12px;
+}
+.form-group .form-control:-ms-input-placeholder{
+   font-size:12px !important;
+}
+
+.form-control {
+    height: 30px;
+    padding: 5px 0;
+    font-size: 12px;
+}
+.form-group {
+    padding-bottom: 5px;
+    margin: 5px 0 0 0;
+}
+.btn, .navbar .navbar-nav > li > a.btn {
+    text-transform: none;
+}
+.dropdown-menu {
+    font-size: 12px;
+}
+.dropdown-menu li > a{
+    font-size: 12px;
+    padding: 5px 20px;
+}
+.card .form-horizontal .label-on-left {
+    padding: 15px 5px 0 0;
+    text-align: right;
+}
+.checkbox label, .radio label, label, .label-on-left, .label-on-right {
+    font-size: 12px;
+}
+.btn-group, .btn-group-vertical{
+    margin: 2px 1px;
+}
+.form-group .checkbox label, .form-group .radio label, .form-group label, .form-group .label-on-left, .form-group .label-on-right{
+    font-size: 12px;
+}
+.nav-pills > li > a{
+    min-width: auto;
+}
+table .nav > li > a {
+    padding: 4px 15px;
+}
+table h5, table h6{
+    margin: 0;
+    line-height: 1em;
+}
+.card-book-preview{
+    width:48px;
+    height:84px;
+}
+.card-book-preview > img{
+    width: 100%;
+}
+h4.card-title{
+    font-weight: 500;
+    margin: 5px 0 0 0;
+}
+table td > .label{
+    padding: 4px 10px;
+    vertical-align: middle;
+}
+.notif-item.notif-status-1{
+    color: #999 !important;
+}
+/*///reduce spaces*/
